@@ -1,0 +1,73 @@
+{
+    "features": [
+        "gender_marriage",
+        "gender_education",
+        "marriage_education",
+        "credit_divide_age",
+        "age_bin",
+        "age_gender",
+        "client",
+        "payment_divide_credit",
+        "payment",
+        "advance",
+        "claim",
+        "payment_1mounth",
+        "claim_1mounth",
+        "advance_1mounth",
+        "payment_4_9",
+        "claim_4_9",
+        "advance_4_9",
+        "advance_claim",
+        "advance_claim_divide_credit",
+        "payment_times_claim",
+        "payment_2month",
+        "claim_2month",
+        "advance_4_2month"
+    ],
+    "lgbm_params": {
+        "objective": "binary",
+        "learning_rate": 0.01,
+        "max_depth": 8
+    },
+    "xgbm_params": {
+        "objective": "reg:linear",
+        "learning_rate": 0.05,
+        "max_depth": 4
+    },
+    "svr_params": {
+        "C": 1000000.0,
+        "epsilon": 0.2,
+        "kernel": "rbf"
+    },
+    "lasso_params": {
+        "alpha": 1.0,
+        "copy_X": true,
+        "fit_intercept": true,
+        "max_iter": 10000,
+        "normalize": true,
+        "positive": false,
+        "precompute": false,
+        "selection": "cyclic",
+        "tol": 0.0001,
+        "warm_start": false
+    },
+    "loss": "binary_logloss",
+    "target_name": "y",
+    "ID_name": "id",
+    "cv": "skfold",
+    "kfold": {
+        "n_splits": 6,
+        "random_state": 0,
+        "shuffle": true
+    },
+    "skfold": {
+        "n_splits": 6,
+        "random_state": 650002,
+        "shuffle": true
+    },
+    "holdout": {
+        "test_size": 0.2,
+        "random_state": 0,
+        "shuffle": true
+    }
+}

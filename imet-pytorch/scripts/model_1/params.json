@@ -1,0 +1,18 @@
+{
+    "batch_size": 48,
+    "clean": false,
+    "debug": false,
+    "epoch_size": null,
+    "fold": 5,
+    "limit": null,
+    "lr": 5e-05,
+    "mode": "train",
+    "model": "resnet101",
+    "n_epochs": 15,
+    "patience": 4,
+    "pretrained": 1,
+    "run_root": "model_1",
+    "step": 1,
+    "tta": 8,
+    "workers": 4
+}
