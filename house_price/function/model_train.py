@@ -56,7 +56,8 @@ def run_xgbm(X_train, y_train, X_test, comment = "", save=False):
     import logging
     importlib.reload(logging)
     logging.basicConfig(
-        filename='./logs/log_{0:%Y%m%d%H:%M%S}.log'.format(now), level=logging.DEBUG
+        filename='./logs/log_{0:%Y%m%d%H:%M%S}.log'.format(now), 
+        level=logging.DEBUG
     )
 
     config = json.load(open("configs/default.json"))
